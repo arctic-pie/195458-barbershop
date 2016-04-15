@@ -38,23 +38,58 @@
      <main class="container">
        <h1>Средства для ухода</h1>
        <div class="breadcrumbs">
-         <a href="#">Главная</a><a href="#">Магазин</a><a href="#">Средства для ухода</a>
-       <section class="">
+         <ul>
+           <li>
+             <a href="#">Главная</a>
+           </li>
+           <li>
+             <a href="#">Магазин</a>
+           </li>
+           <li>
+             <a href="#">Средства для ухода</a>
+           </li>
+         </ul>
+       <aside class="sidebar">
          <h2>Производители</h2>
-         <form action="#" method="post">
-           <label><input type="checkbox" checked name="baxter">Baxter of California</label>
-           <label><input type="checkbox" name="natty">Mr Natty</label>
-           <label><input type="checkbox" checked name="suavecito">Suavecito</label>
-           <label><input type="checkbox" name="malin">Malin+Goetz</label>
-           <label><input type="checkbox" name="murrays">Murray's</label>
-           <label><input type="checkbox" checked name="american">American Crew</label>
+         <form class="filter-1" action="#" method="post">
+           <ul>
+             <li>
+               <label><input type="checkbox" name="manufacturer" value="baxter" checked>Baxter of California</label>
+             </li>
+             <li>
+               <label><input type="checkbox" name="manufacturer" value="natty">Mr Natty</label>
+             </li>
+             <li>
+               <label><input type="checkbox" name="manufacturer" value="suavecito" checked>Suavecito</label>
+             </li>
+             <li>
+               <label><input type="checkbox" name="manufacturer" value="malin">Malin+Goetz</label>
+             </li>
+             <li>
+               <label><input type="checkbox" name="manufacturer" value="murrays">Murray's</label>
+             </li>
+             <li>
+               <label><input type="checkbox" name="manufacturer" value="american" checked>American Crew</label>
+             </li>
+           </ul>
          </form>
          <h2>Группы товаров</h2>
-         <form action="#" method="post">
-           <label><input type="radio" name="group">Бритвенные принадлежности</label>
-           <label><input type="radio" name="group">Средства для ухода</label>
-           <label><input type="radio" name="group">Аксессуары</label>
+         <form class="filter-2" action="#" method="post">
+           <ul>
+             <li>
+               <label><input type="radio" name="group" value="shaving">Бритвенные принадлежности</label>
+             </li>
+             <li>
+               <label><input type="radio" name="group" value="care" checked>Средства для ухода</label>
+             </li>
+             <li>
+               <label><input type="radio" name="group" value="accessories">Аксессуары</label>
+             </li>
+           </ul>
          </form>
+       </aside>
+       <section class="content">
+
        </section>
      </main>
      <footer class="main-footer">
