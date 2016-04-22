@@ -52,47 +52,27 @@
          </ul>
        </nav>
        <aside class="sidebar">
-         <h2>Производители</h2>
-         <form class="filter-1" action="#" method="post">
-           <ul>
-             <li>
-               <label><input type="checkbox" name="manufacturer" value="baxter" checked>Baxter of California</label>
-             </li>
-             <li>
-               <label><input type="checkbox" name="manufacturer" value="natty">Mr Natty</label>
-             </li>
-             <li>
-               <label><input type="checkbox" name="manufacturer" value="suavecito" checked>Suavecito</label>
-             </li>
-             <li>
-               <label><input type="checkbox" name="manufacturer" value="malin">Malin+Goetz</label>
-             </li>
-             <li>
-               <label><input type="checkbox" name="manufacturer" value="murrays">Murray's</label>
-             </li>
-             <li>
-               <label><input type="checkbox" name="manufacturer" value="american" checked>American Crew</label>
-             </li>
-           </ul>
-         </form>
-         <h2>Группы товаров</h2>
-         <form class="filter-2" action="#" method="post">
-           <ul>
-             <li>
-               <label><input type="radio" name="group" value="shaving">Бритвенные принадлежности</label>
-             </li>
-             <li>
-               <label><input type="radio" name="group" value="care" checked>Средства для ухода</label>
-             </li>
-             <li>
-               <label><input type="radio" name="group" value="accessories">Аксессуары</label>
-             </li>
-           </ul>
+         <form class="filter" action="#" method="post">
+           <fieldset>
+             <legend>Производители</legend>
+               <label><input type="checkbox" name="manufacturer" value="baxter" checked>Baxter of California</label><br>
+               <label><input type="checkbox" name="manufacturer" value="natty">Mr Natty</label><br>
+               <label><input type="checkbox" name="manufacturer" value="suavecito" checked>Suavecito</label><br>
+               <label><input type="checkbox" name="manufacturer" value="malin">Malin+Goetz</label><br>
+               <label><input type="checkbox" name="manufacturer" value="murrays">Murray's</label><br>
+               <label><input type="checkbox" name="manufacturer" value="american" checked>American Crew</label><br>
+           </fieldset>
+           <fieldset>
+             <legend>Группы товаров</legend>
+               <label><input type="radio" name="group" value="shaving">Бритвенные принадлежности</label><br>
+               <label><input type="radio" name="group" value="care" checked>Средства для ухода</label><br>
+               <label><input type="radio" name="group" value="accessories">Аксессуары</label><br>
+           </fieldset>
            <button class="btn sidebar-display" type="submit">Показать</button>
          </form>
        </aside>
-       <section class="content">
-         <div class="promo-1">
+       <section class="catalog">
+         <div class="catalog-item">
            <a href="#"><img width="220" height="165" src="http://placehold.it/220x165" alt="Baxter of California"></a>
            <a href="#"><p>Набор для путешествий <br>«BAXTER OF CALIFORNIA»</p></a>
            <div class="price">2 900 РУБ.</div>
@@ -100,15 +80,15 @@
              <a href="#">КУПИТЬ</a>
            </div>
          </div>
-         <div class="promo-2">
+          <div class="catalog-item">
            <a href="#"><img width="220" height="165" src="http://placehold.it/220x165" alt="Baxter of California"></a>
            <a href="#"><p>Увлажняющий кондиционер <br>«BAXTER OF CALIFORNIA»</p></a>
            <div class="price">750 РУБ.</div>
            <div class="buy">
              <a href="#">КУПИТЬ</a>
            </div>
-         </div>
-         <div class="promo-3">
+          </div>
+         <div class="catalog-item">
            <a href="#"><img width="220" height="165" src="http://placehold.it/220x165" alt="Suavecito"></a>
            <a href="#"><p>Гель для волос <br>«SUAVECITO»</p></a>
            <div class="price">290 РУБ.</div>
@@ -116,7 +96,7 @@
              <a href="#">КУПИТЬ</a>
            </div>
          </div>
-         <div class="promo-4">
+         <div class="catalog-item">
            <a href="#"><img width="220" height="165" src="http://placehold.it/220x165" alt="American Crew"></a>
            <a href="#"><p>Глина для укладки волос <br>«AMERICAN CREW»</p></a>
            <div class="price">500 РУБ.</div>
@@ -124,7 +104,7 @@
              <a href="#">КУПИТЬ</a>
            </div>
          </div>
-         <div class="promo-5">
+         <div class="catalog-item">
            <a href="#"><img width="220" height="165" src="http://placehold.it/220x165" alt="American Crew"></a>
            <a href="#"><p>Гель для волос <br>«AMERICAN CREW»</p></a>
            <div class="price">300 РУБ.</div>
@@ -132,18 +112,20 @@
              <a href="#">КУПИТЬ</a>
            </div>
          </div>
-         <div class="promo-6">
+         <div class="catalog-item">
            <a href="#"><img width="220" height="165" src="http://placehold.it/220x165" alt="Baxter of California"></a>
            <a href="#"><p>Набор для бритья <br>«BAXTER OF CALIFORNIA»</p></a>
            <div class="price">3 900 РУБ.</div>
            <div class="buy">
              <a href="#">КУПИТЬ</a>
            </div>
-         </div>
-         <button class="btn content-1">1</button>
-         <button class="btn content-2">2</button>
-         <button class="btn content-3">3</button>
-         <button class="btn content-4">4</button>
+          </div>
+         <ul class="pagination">
+             <li><button class="btn pagination-1">1</button></li>
+             <li><button class="btn pagination-2">2</button></li>
+             <li><button class="btn pagination-3">3</button></li>
+             <li><button class="btn pagination-4">4</button></li>
+         </ul>
        </section>
      </main>
      <footer class="main-footer">

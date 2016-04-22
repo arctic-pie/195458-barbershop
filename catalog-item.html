@@ -55,18 +55,37 @@
            </ul>
          </nav>
          <section class="gallery">
-           <a href="#"><img width="460" height="498" src="http://placehold.it/460x498" alt="Baxter of California"></a>
-           <ul class="">
-             <li>
-               <button class="btn"><img width="140" height="149" src="http://placehold.it/140x149" alt="Baxter of California"></button>
-             </li>
-             <li>
-               <button class="btn"><img width="140" height="149" src="http://placehold.it/140x149" alt="Baxter of California"></button>
-             </li>
-             <li>
-               <button class="btn"><img width="140" height="149" src="http://placehold.it/140x149" alt="Baxter of California"></button>
-             </li>
-           </ul>
+              <div class="slider">
+                 <input type="radio" name="slide" id="slide1" checked>
+                 <input type="radio" name="slide" id="slide2">
+                 <input type="radio" name="slide" id="slide3">
+                 <div class="slides">
+                   <div class="hidden">
+                     <div class="inner">
+                       <div class="page">
+                         <img width="460" height="498" src="http://placehold.it/460x498/88cc00" alt="Baxter of California">
+                       </div>
+                       <div class="page">
+                         <img width="460" height="498" src="http://placehold.it/460x498/00ddee" alt="Baxter of California">
+                       </div>
+                       <div class="page">
+                         <img width="460" height="498" src="http://placehold.it/460x498/11cc88" alt="Baxter of California">
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="slider-controls">
+                     <label for="slide1">
+                       <img width="140" height="149" src="http://placehold.it/140x149/88cc00" alt="Baxter of California">
+                     </label>
+                     <label for="slide2">
+                       <img width="140" height="149" src="http://placehold.it/140x149/00ddee" alt="Baxter of California">
+                     </label>
+                     <label for="slide3">
+                       <img width="140" height="149" src="http://placehold.it/140x149/11cc88" alt="Baxter of California">
+                     </label>
+                 </div>
+              </div>
          </section>
          <section class="content">
            <span>есть в наличии</span>
